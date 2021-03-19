@@ -4,125 +4,83 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
+<div id="navbar">
+<a href="#about">About Me</a>
+<a href="#photos">My Photos</a>
+<a href="#playlist">My Playlist</a>
+<a href="#like">Like</a>
+<a href="#qrcoder">QR code</a>
+<a href="#spa">Q&A</a>
+<a href="#contact">Contact Me</a>
 </div>
 		  
 <section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 about me
-<br/>
-<br/>
-<br/>
+פירוט קצר על המבוגר/ת – הי סטוריה , קורות חיים, תחביבים, 
+תחומי העניין, דמות שהשפיעה עליו/ה במרוצת חיי ו/ה וכדומה, וכו' 
+
 </section>
 
 <section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
+  <h1>my photos</h1>
+  תמונות שונות של המבוגר לאורך השנים עם חברים, משפחה וכו'. ודאו 
+שהתמונות מוצגות באתר כראוי גם כאשר פותחים אותו במחשבים 
+אחרים.
+   <!-- The grid: four columns -->
+<div class="row">
+  <div class="column">
+    <img src="img1.jpg" alt="Nature" width="250" height="200" onclick="imgFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img2.jpg" alt="Snow" width="250" height="200" onclick="imgFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img3.jpg" alt="Mountains" width="250" height="200" onclick="imgFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img4.jpg" alt="Lights" width="250" height="200" onclick="imgFunction(this);">
+  </div>
+</div>
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:76%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div> 
+
 </section>
 
 <section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
+<h1>my Playlist</h1>
+<iframe width="700" height="600"
+src="https://www.youtube.com/embed/watch?v=enRS7bXp2JQ&list=RDenRS7bXp2JQ&start_radio=1">
+</iframe> 
+<iframe width="1200" height="600" src="https://www.youtube.com/embed/playlist?list=PL2E373ABBD360C09F" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </section>
 
 <section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 give me a like
+<!-- LikeBtn.com BEGIN -->
+<span class="likebtn-wrapper" data-theme="custom" data-btn_size="24" data-icon_l="thmb7-u" data-icon_d="thmb7-d" data-icon_l_c="#0df703" data-icon_d_c="#f40b0b" data-ef_voting="buzz" data-identifier="item_1"></span>
+<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+<!-- LikeBtn.com END -->
 <br/>
-<br/>
-<br/>
+<h3>Button with counter for people who likes to  click</h3>
+<p>
+  <a href="#" title="Love it" class="btn btn-counter multiple-count" data-count="0"><span>&#x2764;</span></a>
+  <a href="#" title="Love it" class="btn btn-counter multiple-count" data-count="0"><span>&#x2764;</span> Love it</a>
+</p>
 </section>
 
 <section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 scan my code
 <br/>
 <br/>
@@ -130,22 +88,7 @@ scan my code
 </section>
 
 <section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 ans
 <br/>
 <br/>
@@ -153,29 +96,53 @@ ans
 </section>
 
 <section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 contact me
-<br/>
-<br/>
-<br/>
+
+<h2>Send e-mail to oldman@gmail.com:</h2>
+
+<form action="mailto:oldman@gmail.com" method="post" enctype="text/plain">
+Name:<br>
+<input type="text" name="name"><br>
+E-mail:<br>
+<input type="text" name="mail"><br>
+Comment:<br>
+<input type="text" name="comment" size="50"><br><br>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>
 </section>
 
 
+
+
+<!--IMG FUNCTION--> 
+<script>
+  function imgFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+  </script>
+
+
+<!--SCROLL FUNCTION--> 
+<script>
+  window.onscroll = function() {scrollFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function scrollFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+  
 <script type="text/javascript">
 $(function(){
   $("#nav a").click(function(e){
