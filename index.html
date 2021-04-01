@@ -2,153 +2,190 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<script src="https://cdn.tiny.cloud/1/z2c0sx4p35ln2ksgsxoq243jt0q82gmbfzv28if37qzerrrv/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+  tinymce.init({
+    selector: "#mytextarea",
+    plugins: "emoticons",
+    toolbar: "emoticons",
+    toolbar_location: "bottom",
+    menubar: false
+  });
+</script>
 </head>
 <body>
   <!---HEADER--> 
-<div class="header">
+<div class="header" style="text-align: center;">
   <h1>Meme's Website</h1>
-  <p>A <b>responsive</b> website created by me.</p>
+  <h2>A <b>Cool</b> website created by me.</h2>
 </div>
 
   <!---NAVBAR--> 
 <div id="navbar">
-<a href="#about">About Me</a>
-<a href="#photos">My Photos</a>
-<a href="#playlist">My Playlist</a>
-<a href="#like">Like</a>
-<a href="#qrcoder">QR code</a>
-<a href="#spa">Q&A</a>
-<a href="#contact">Contact Me</a>
+<a href="#about"><b>About Me</b></a>
+<a href="#photos"><b>Photos</b></a>
+<a href="#playlist"><b>My Playlist</b></a>
+<a href="#like"><b>Like</b></a>
+<a href="#qrcoder"><b>QR Code</b></a>
+<a href="#spa"><b>Q&A</b></a>
+<a href="#contact"><b>Contact Me</b></a>
 </div>
+
   <!---ABOUT ME--> 
-<section id="about" class="section">
-  <br/>
-  <br/>
+<section id="about" class="section" style="text-align: center;font-size:x-large;">
+  <br/> <br/>
 <h1>ABOUT ME</h1>
+<hr>
 <pre>
 נולדה בעיר פס שבמרוקו,בתאריך 26 בספטמבר 1946 בת למשה ורבקה, האחות הרביעית למשפחה סך הכל שבעה אחרים.
 את ילדותה העבירה במרוקו בערים פס וקזבלנקה, כאשר הייתה בת 30 בשנת 1976 עלתה לארץ ישראל יחד עם אחותה ואחיה
 נישאה בגיל 19 לשמעון בן נאים והביאו לעולם שלושה ילדים: אלון, נטלי ואורן
-כיום גרה ברמת השרון, בעלת מספרה "סלון נטלי", אוהבת לבשל ולהיות עם המשפחה . 
+כיום גרה ברמת השרון, בעלת מספרה "סלון נטלי", אוהבת לבשל ולהיות עם המשפחה.
+מנויה לתזמורת הפילהרמונית, חובבת קונצרטים ומוסיקה קלאסית, מומחית בהכנת עוגיות ועוגות.
+אוהבת לבלות עם הנכדים ותמיד דואגת לשלומם.
+כל שישי מארחת אצלה בבית את כל המשפחה.
+אוהבת לשבת עם חברות בבתי קפה, לאכול במסעדות טובות.
+קוראת ספרים להנאתה, ספר אהוב: הביוגרפיה של אריאל שרון. 
 </pre>
-פירוט קצר על המבוגר/ת – הי סטוריה , קורות חיים, תחביבים, 
-תחומי העניין, דמות שהשפיעה עליו/ה במרוצת חיי ו/ה וכדומה, וכו' 
-
 </section>
 
+<hr>
+
+  <!---PHOTOS--> 
 <section id="photos" class="section">
-  <br/>
-  <br/>
-
+  <br/> <br/>
   <h1>MY PHOTOS</h1>
-  תמונות שונות של המבוגר לאורך השנים עם חברים, משפחה וכו'. ודאו 
-שהתמונות מוצגות באתר כראוי גם כאשר פותחים אותו במחשבים 
-אחרים.
-   <!-- The grid: four columns -->
-<div class="row">
-  <div class="column">
-    <img src="meme1.JPG" alt="Nature" width="250" height="200" onclick="imgFunction(this);">
-  </div>
-  <div class="column">
-    <img src="meme2.JPG" alt="Snow" width="250" height="200" onclick="imgFunction(this);">
-  </div>
-  <div class="column">
-    <img src="meme4.JPG" alt="Mountains" width="250" height="200" onclick="imgFunction(this);">
-  </div>
-  <div class="column">
-    <img src="img4.jpg" alt="Lights" width="250" height="200" onclick="imgFunction(this);">
-  </div>
-</div>
-
-<!-- The expanding image container -->
-<div class="container">
-  <!-- Close the image -->
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-
-  <!-- Expanded image -->
-  <img id="expandedImg" style="width:76%">
-
-  <!-- Image text -->
-  <div id="imgtext"></div>
-</div> 
+  <hr>
+  <div class="row">
+    <div class="column">
+      <img src="meme1.JPG" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="meme2.JPG" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="meme3.jpeg" alt="Mountains" style="width:100%">
+    </div>
+  </div> 
+  <div class="row">
+    <div class="column">
+      <img src="meme5.jpeg" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="meme6.jpeg" alt="Mountains" style="width:100%">
+    </div>
+  </div> 
+  <div class="row">
+    <div class="column">
+      <img src="meme7.jpeg" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="meme8.jpeg" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="meme9.jpeg" alt="Mountains" style="width:100%">
+    </div>
+  </div> 
 
 </section>
 
-<section id="playlist" class="section">
-  <br/>
-  <br/>
+<hr>
 
+  <!---PLAYLIST--> 
+<section id="playlist" class="section">
+  <br/> <br/>
 <h1>MY PLAYLIST</h1>
+<hr>
 <iframe width="1200" height="600" src="https://www.youtube.com/embed/playlist?list=PL-_jOW8kIWnuZSU7-GAx4iaEBtZ7FneQr" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </section>
+<hr>
 
+
+  <!---LIKE--> 
+  
 <section id="like" class="section">
-  <br/>
-  <br/>
+  <br/> <br/>
 
   <h1>LIKE ME</h1>
-<h3>Button with counter for people who likes to  click</h3>
-<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.youtube.com%2Fplaylist%3Flist%3DPL2tMgWgIvcWmjs4i6DcXm7YmjPlTXUl9E&width=174&layout=button_count&action=like&size=large&share=true&height=46&appId" width="174" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  <hr>
+
+<h3>Please like our page!</h3>
+<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fweb-development-environments-2021.github.io%2Fassignment1-benmarga%2F&width=450&layout=standard&action=like&size=large&share=true&height=35&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 </section>
+<hr>
+
 
 <section id="qrcoder" class="section">
-  <br/>
-  <br/>
-
+  <br/><br/>
   <h1>SCAN ME</h1>
-
+  <img src="QR.jpg">
 </section>
+<hr>
 
-<section id="spa" class="section">
-  <br/>
-  <br/>
-
+<section id="spa" class="section" style="text-align: center;font-size:x-large;">
+  <br/> <br/>
   <h1>Q&A</h1>
-
+  <pre>
+    Main differnces between WEB1,WEB2,WEB3:
+    1. 
+    WEB1
+    בעיקר שימש עבור חברות, לפירסום מידע שאנשים צורכים.
+    WEB2
+    אנשים התחילו לפרסם דברים שאנשים אחרים יכולים לצרוך, ישנן פלטפורמות שונות בהן אנשים יכולים לפרסם תוכן שאנשים אחרים יכולים לצרוך לדוגמת יוטיוב וכו'.
+    WEB3
+    אנשים בונים אפליקציות אשר לאנשים אחרים יכולה להיות אינטרקציה איתן, חברות בונות פלטפורמות שמאפשרות לאנשים לפרסם שירותים ע"י מינוף הקשר בין אנשים למשל פייסבוק.
+    2.
+    WEB1
+    היה בעיקר תוכן סטטי, דרך אחת לפרסום תוכן ללא השפעה בין הקוראים למפרסמים.
+    WEB2
+    ויקפדיות, בלוגים, דרכי תקשורת דרך רשתות חברתיות, המשתמש מייצר תוכן.
+    WEB3
+    עדיין אינו מוגדר. בינה מלאכותית ויכולות למידה על מנת לספק לכל משתמש חווית WEB אישית.
+    3. 
+    WEB1
+    התבסס בעיקר על קישור מידע.
+    WEB2
+    התבסס בעיקר על קישור אנשים.
+    WEB3
+    מתבסס בעיקר על קישור ידע.
+    <br>
+    <b>USE CASE</b>
+    <br>
+    חיפוש שאילתה לדוגמא "ביבי נתניהו"
+    WEB1 
+    על מנת למצוא מידע רלוונטי אודות "ביבי נתינהו" על המשתמש להקליד יו-אר-אל ספציפי
+    WEB2
+    על מנת למצוא מידע רלוונטי אודות "ביבי נתינהו" על המשתמש להקליד שאילתת חיפוש המכילה מילים ויקבל תוצאות המכילות את המילים
+    WEB3
+    על מנת למצוא מידע רלוונטי אודות "ביבי נתינהו" על המשתמש להקליד שאילתת חיפוש המכילה מילים ויקבל תוצאות המכילות את המילים או הקשורות סמנטית למילות החיפוש
+  </pre>
 </section>
+<hr>
+
 
 <section id="contact" class="section">
-  <br/>
-  <br/>
-
+  <br/> <br/>
   <h1>CONTACT ME</h1>
-
-<h2>Send e-mail to oldman@gmail.com:</h2>
-
-<form action="mailto:oldman@gmail.com" method="post" enctype="text/plain">
+<h2>Send e-mail to Benmarga@post.bgu.ac.il:</h2>
+<form action="mailto:Benmarga@post.bgu.ac.il" method="post" enctype="text/plain">
 Name:<br>
 <input type="text" name="name"><br>
 E-mail:<br>
 <input type="text" name="mail"><br>
 Comment:<br>
-<input type="text" name="comment" size="50"><br><br>
+<input id="mytextarea" type="text" name="comment" size="50" >
 <input type="submit" value="Send">
 <input type="reset" value="Reset">
 </form>
 </section>
-
-
-
-
-<!--IMG FUNCTION--> 
-<script>
-  function imgFunction(imgs) {
-    var expandImg = document.getElementById("expandedImg");
-    var imgText = document.getElementById("imgtext");
-    expandImg.src = imgs.src;
-    imgText.innerHTML = imgs.alt;
-    expandImg.parentElement.style.display = "block";
-  }
-  </script>
+<hr>
 
 
 <!--SCROLL FUNCTION--> 
 <script>
   window.onscroll = function() {scrollFunction()};
-  
   var navbar = document.getElementById("navbar");
   var sticky = navbar.offsetTop;
-  
   function scrollFunction() {
     if (window.pageYOffset >= sticky) {
       navbar.classList.add("sticky")
@@ -157,19 +194,7 @@ Comment:<br>
     }
   }
   </script>
-  
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
+
+
 </body>
 </html>
